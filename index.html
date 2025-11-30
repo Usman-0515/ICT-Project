@@ -1,68 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventify.Fast</title>
-   <link rel="stylesheet" href="index.css">
+    <title>Event Booking Form</title>
+    <link rel="stylesheet" href="book.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">Eventify.Fast</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="book.html">Book</a>
-            <a href="FAQs.html">FAQs</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
+<header class="navbar">
+    <div class="logo">Eventify.Fast</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="book.html">Book</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Click. Book. Go.</h1>
-            <a href="events.html" class="btn-primary">View Events</a>
-        </div>
-    </section>
+<h2>Book Your Event</h2>
 
-    <section class="events-section">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <div class="event-cards-container">
-                
-                <div class="event-card">
-                    <img src="home.images/wrkshop.jpg" alt="Intro to Web Development">
-                    <div class="card-body">
-                        <h3>Intro to Web Development</h3>
-                        <p>A workshop for beginners to learn HTML, CSS, and JavaScript</p>
-                        <span class="event-date">21 August 2025</span>
-                    </div>
-                </div>
+<form>
+    <label>Enter Your Name</label><br>
+    <input type="text" id="name"><br><br>
 
-                <div class="event-card">
-                    <img src="home.images/dj.jpg" alt="Outdoor Music Night">
-                    <div class="card-body">
-                        <h3>Dj Night</h3>
-                        <p>An evening of live music performances in an open air-setting</p>
-                        <span class="event-date">20 November 2025</span>
-                    </div>
-                </div>
+    <label>Enter Roll Number</label><br>
+    <input type="text" id="rollNo"><br><br>
 
-                <div class="event-card">
-                    <img src="home.images/game.jpg" alt="E Sports Day">
-                    <div class="card-body">
-                        <h3>Gamming Tournament</h3>
-                        <p>Esports activities </p>
-                        <span class="event-date">10 April 2025</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <label>Select Event</label><br>
+    <select id="event">
+        <option value="">--Select--</option>
+        <option value="DJ Night">DJ Night</option>
+        <option value="Tech Workshop">Tech Workshop</option>
+        <option value="Gaming Tournament">Gaming Tournament</option>
+    </select>
+    <br><br>
 
-    <footer>
-        <p>&copy;Eventify.Fast  2025</p>
-    </footer>
+    <label>Select Department</label><br>
+    <select id="dept">
+        <option value="">--Select--</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="BBA">BBA</option>
+    </select>
+    <br><br>
+
+    <label>Ticket Amount (Rs.)</label><br>
+    <input type="number" id="amount"><br><br>
+
+    <label>Paid Through</label><br>
+    <select id="payment">
+        <option value="">--Select--</option>
+        <option value="HBL">HBL</option>
+        <option value="Easypaisa">Easypaisa</option>
+        <option value="JazzCash">JazzCash</option>
+        <option value="Cash">Cash</option>
+    </select><br><br>
+
+    <label for="account">Account number</label>
+    <input type="text" id="account"><br><br>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+
+    <p id="message" style="white-space: pre-line;"></p>
+</form>
+
+<script src="book.js"></script>
+
+<footer>
+    <p>&copy; Eventify.Fast 2025</p>
+</footer>
+
 </body>
 </html>
