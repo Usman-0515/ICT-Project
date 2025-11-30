@@ -1,0 +1,230 @@
+:root {
+    --primarycolor: #007bff;
+    --primarydark: #0056b3;
+    --textdark: #333;
+    --textlight: #555;
+    --backgroundlight: #f4f4f4;
+    --backgroundwhite: #ffffff;
+    --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundlight);
+    color: var(--textdark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--textdark);
+    transition: color 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--backgroundwhite);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.logo {
+    font-size: 28px; 
+    font-weight: 800; 
+    font-family: 'Poppins', sans-serif;
+    color: var(--primarydark); 
+    letter-spacing: 1px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: var(--primarycolor); 
+}
+
+nav a {
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--textlight);
+}
+
+nav a:hover {
+    color: var(--primarycolor);
+}
+.hero-section {
+    background: var(--primarydark); 
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.btn-primary {
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 50px; 
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #033099;
+    transform: translateY(-2px); 
+}
+.events-section {
+    padding: 70px 0;
+    background-color: var(--backgroundwhite);
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: var(--textdark);
+    position: relative;
+}
+
+.events-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primarycolor);
+    margin: 10px auto 0;
+    border-radius: 50px;
+}
+
+.event-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.event-card {
+    flex: 1;
+    background-color: var(--backgroundwhite);
+    box-shadow: var(--shadow-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.event-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px); 
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--primarycolor);
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 15px;
+    color: var(--textlight);
+    margin-bottom: 15px;
+}
+
+.event-date {
+    font-weight: 700;
+    color: var(--primarycolor);
+    font-size: 16px;
+    display: block;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color:#007bff;
+    color: var(--backgroundlight); 
+    font-size: 14px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-container,
+    .hero,
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-container img,
+    .hero img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    /* MOBILE — stack images vertically */
+ 
+
+    .event-card { 
+        display: flex;
+        flex-direction: column; /* IMAGES GO UP–DOWN */
+        gap: 15px; /* space between images */
+    }
+
+    .event-card img {
+        width: 100%;   /* full width */
+        height: auto;  /* keep quality */
+    }
+
+
+}
