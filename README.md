@@ -70,7 +70,7 @@ The **Event Management System** is a modern,litle bit responsive website where u
 1. **Download or clone the repository:**
 
 ```
-git clone https://github.com/yourusername/Event-Management-System.git
+git clone https://github.com/Usman-0515/ICT-Project
 ```
 2. Open the project folder in your preferred code editor.
 
