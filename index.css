@@ -212,19 +212,20 @@ footer {
     p {
         font-size: 14px;
     }
-    /* MOBILE — stack images vertically */
+    /* MOBILE — stack images vertically *
  
 
     .event-card { 
         display: flex;
-        flex-direction: column; /* IMAGES GO UP–DOWN */
-        gap: 15px; /* space between images */
+        flex-direction: column; 
+        gap: 15px; 
     }
 
     .event-card img {
-        width: 100%;   /* full width */
-        height: auto;  /* keep quality */
+        width: 100%;   
+        height: auto;  
     }
 
 
 }
+
