@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Booking Form</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Eventify.Fast</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="book.html">Book</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h2>Book Your Event</h2>
+
+<form>
+    <label>Enter Your Name</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Enter Roll Number</label><br>
+    <input type="text" id="rollNo"><br><br>
+
+    <label>Select Event</label><br>
+    <select id="event">
+        <option value="">--Select--</option>
+        <option value="DJ Night">DJ Night</option>
+        <option value="Tech Workshop">Tech Workshop</option>
+        <option value="Gaming Tournament">Gaming Tournament</option>
+    </select>
+    <br><br>
+
+    <label>Select Department</label><br>
+    <select id="dept">
+        <option value="">--Select--</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="BBA">BBA</option>
+    </select>
+    <br><br>
+
+    <label>Ticket Amount (Rs.)</label><br>
+    <input type="number" id="amount"><br><br>
+
+    <label>Paid Through</label><br>
+    <select id="payment">
+        <option value="">--Select--</option>
+        <option value="HBL">HBL</option>
+        <option value="Easypaisa">Easypaisa</option>
+        <option value="JazzCash">JazzCash</option>
+        <option value="Cash">Cash</option>
+    </select><br><br>
+
+    <label for="account">Account number</label>
+    <input type="text" id="account"><br><br>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+
+    <p id="message" style="white-space: pre-line;"></p>
+</form>
+
+<script src="book.js"></script>
+
+<footer>
+    <p>&copy; Eventify.Fast 2025</p>
+</footer>
+
+</body>
+</html>
