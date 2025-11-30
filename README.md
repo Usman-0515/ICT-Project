@@ -1,11 +1,11 @@
 
-# **Event Management System – Click. Book. Go. 🎉📅**
+# **Event Management System – Click. Book. Go. **
 
 **Event Management System**
 Link
 
 ## 🌐 Check Live Website
-<a href="https://github.com/Usman-0515/ICT-Project" target="_blank" rel="noopener noreferrer">Click here to open the live project</a>
+<a href="https://usman-0515.github.io/ICT-Project" target="_blank" rel="noopener noreferrer">Click here to open the live project</a>
 
 # **Table of Contents**
 
@@ -23,7 +23,7 @@ Link
 
 # **Description**
 
-The **Event Management System** is a modern, responsive website where users can explore different event categories, understand available services, and connect with event organizers. The platform is designed for a clean and smooth browsing experience, featuring organized pages, multiple event types, and an intuitive interface.
+The **Event Management System** is a modern,litle bit responsive website where users can explore different event categories, understand available services, and connect with event organizers. The platform is designed for a clean and smooth ticket buying experience, featuring organized pages, multiple events y universities, and very simple UI.
 
 ✨ **Highlights:**
 
@@ -39,17 +39,17 @@ The **Event Management System** is a modern, responsive website where users can 
 ### **Event Categories & Details**
 
 * Multiple dedicated HTML pages for different event types
-* High-quality images and short descriptions
+* High-quality images as last year memories and short descriptions
 * Category-based browsing for easy navigation
 
 ### **Interactive Navigation**
 
 * Multi-page structure with linked buttons
-* Header & footer menus for quick movement between pages
+* Header menu for quick movement between pages
 
 ### **Styled & Themed Layout**
 
-* Custom CSS theme for an engaging look
+* CSS theme for an engaging look
 * Consistent layout, color scheme, and typography on all pages
 
 ---
@@ -57,11 +57,11 @@ The **Event Management System** is a modern, responsive website where users can 
 # **Features**
 
 * **Home Page:** Highlights featured events and services
-* **About Us:** Introduction, mission, and purpose of the system
-* **Event Categories:** Gaming Tournament, DJ Night and Tech Workshop.
-* **Services Section:** Ticket Generating, photography, venue options
+* **About Us:** Introduction, mission,purpose of the system and team
+* **Event Categories:** Gaming Tournament, DJ Night and Tech Workshop and can add more
+* **Booking Section:** Ticket Generating
 * **Contact Page:** Form and communication details
-* **Responsive Design:** Works on desktops, tablets, and mobile devices
+* **Responsive Design:** Works on desktops and mobile devices as well
 
 ---
 
@@ -85,14 +85,12 @@ git clone https://github.com/yourusername/Event-Management-System.git
 # **File Structure**
 
 ```
-about/                    # About page HTML, CSS, JS
-events/                   # Event category pages
-services/                 # Services pages (Ticketing, photography, recording)
-contact/                  # Contact page and form
-images/                   # All images used across the site
-index.html                # Main home page
-style.css                 # Global styling
-script.js                 # Main JavaScript logic
+about.html/                    # About page HTML, CSS, JS
+events.html/                   # Event category pages
+book.html/                     # booking page (Ticket buying)
+FAQs.html/                     # Contact page and form
+images.html/                   # All images used across the site
+index.html/                    # Main home page
 ```
 
 
@@ -103,7 +101,7 @@ script.js                 # Main JavaScript logic
 | Action           | Result                             |
 | ---------------- | ---------------------------------- |
 | Click "Events"   | Opens event category page          |
-| Click "Services" | Opens services section             |
+| Click "Book"     | Opens booking  section             |
 | Click "About Us" | Shows system details               |
 | Click "Contact"  | Opens contact information and form |
 
@@ -120,9 +118,9 @@ script.js                 # Main JavaScript logic
 
 * Categories with pictures and details
 
-### **Services Page**
+### **Booking Page**
 
-* Ticketing, photography, recording
+* Ticketing
 
 ### **About Us**
 
@@ -148,7 +146,7 @@ All content is static and written directly in **HTML, CSS, and JavaScript**.
 
 * **HTML5**
 * **CSS3**
-* **JavaScript (Vanilla)**
+* **JavaScript**
 
 🛠️ This project is open for improvements.
 You can add backend booking, admin panel, database integration, or UI enhancements! 🚀
