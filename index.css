@@ -212,9 +212,6 @@ footer {
     p {
         font-size: 14px;
     }
-    /* MOBILE — stack images vertically *
- 
-
     .event-card { 
         display: flex;
         flex-direction: column; 
@@ -228,4 +225,5 @@ footer {
 
 
 }
+
 
