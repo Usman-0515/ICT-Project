@@ -201,29 +201,52 @@ footer {
 
 @media (max-width: 480px) {
 
-    nav ul li a {
-        font-size: 14px;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-    .event-card { 
+    .navbar {
         display: flex;
-        flex-direction: column; 
-        gap: 15px; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
     }
 
-    .event-card img {
-        width: 100%;   
-        height: auto;  
+    .navbar nav {
+        display: flex;
+    }
+
+    .navbar nav a {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 16px; 
     }
 
 
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-cards-container .event-card {
+        width: 100%;
+        height: auto;
+    }
 }
+
 
 
